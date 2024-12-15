@@ -34,6 +34,11 @@ Geodesic equation describes free-falling objects follow the straightest possible
 ### Action
 
 $$
+S=-\frac{1}{c}\int L_m \sqrt{-g} d^4x + \frac{c^3}{16\pi G}\int R\sqrt{-g} d^4x
+$$
+
+
+$$
 \begin{align*}
 S &= S_m + S_g  \\
 S_m &= -\frac{1}{c}\int L_m \sqrt{-g} d^4x \tag{matter action}\\
