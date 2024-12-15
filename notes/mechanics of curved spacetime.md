@@ -29,9 +29,9 @@ $$
 
 Geodesic equation describes free-falling objects follow the straightest possible paths (geodesics) in curved spacetime.
 
-## Least Action
+## Action
 
-### Action
+### Action of Gravitational field
 
 $$
 S=-\frac{1}{c}\int L_m \sqrt{-g} d^4x + \frac{c^3}{16\pi G}\int R\sqrt{-g} d^4x

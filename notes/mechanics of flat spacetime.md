@@ -54,9 +54,9 @@ v_z &= \frac{v'_z \sqrt{1 - \frac{V^2}{c^2}}}{1 + \frac{v'_x V}{c^2}}
 \end{align*}
 $$
 
-## Least Action
+## Action
 
-### Action
+### Action of flat relativity spacetime
 
 $$
 S = \int L \, d\tau\\

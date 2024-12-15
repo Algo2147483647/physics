@@ -27,7 +27,19 @@ $$
 - **Position transformation**: the position in the original frame $\boldsymbol r$ is related to the position in the moving frame $\boldsymbol r'$ by adding the distance the moving frame has traveled during time $t$, which is $\boldsymbol V t$.
 - **Velocity transformation**: the velocity of an object in the original frame $\boldsymbol v$ is the sum of its velocity in the moving frame $\boldsymbol v'$ and the velocity of the moving frame itself $\boldsymbol V$.
 
-## Least Action
+## Action
+
+### Action of absolute spacetime
+
+$$
+S = \int (T - V) \mathrm dt
+$$
+
+### Least Action
+
+
+
+
 
 - 在没有外力作用下孤立质点保持静止或做匀速直线运动
 - 动量为$\boldsymbol P$的质点，在外力的作用下，其动量随时间的变化率同该质点所受的外力成正比，并与外力的方向相同.
@@ -55,6 +67,7 @@ $$
 ## Gravitation
 
 $$
-\boldsymbol F = \frac{G m_1m_2}{r^2}\hat{\boldsymbol r}\\
-G = (6.67 \pm0.07) \times 10^{-11} \mathrm{m^3kg^{-1}s^{-2}}
+\boldsymbol F = \frac{G m_1m_2}{r^2}\hat{\boldsymbol r}
 $$
+
+- $G = (6.67 \pm0.07) \times 10^{-11} \mathrm{m^3kg^{-1}s^{-2}}$

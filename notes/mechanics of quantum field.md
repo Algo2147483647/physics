@@ -1,43 +1,44 @@
-## Wave function
+# Quantum Field
 
-### Schrödinger equation
+[TOC]
 
-**时间依赖的薛定谔方程**：
+
+
+## Principles
+
+### Wave-Particle Duality
+
+Quantum objects (like electrons or photons) exhibit both wave-like and particle-like properties. They can behave as particles in some experiments and as waves in others.
+
+### Measurement and Collapse
+
+The Copenhagen Interpretation asserts that until a quantum system is measured, it exists in a superposition of all possible states. Upon measurement, the wave function "collapses" to a single state, which is observed. The act of observation is crucial in determining the outcome.
+
+### Wave equation: Schrödinger equation
+
 $$
 i\hbar \frac{\partial}{\partial t} \psi(\mathbf{r}, t) = \hat{H} \psi(\mathbf{r}, t)
 $$
-其中，$\psi(\mathbf{r}, t)$是波函数，$\hbar$是约化普朗克常数，$\hat{H}$是哈密顿算符。
+The time-dependent Schrödinger equation, describes how the quantum state evolves over time for a given Hamiltonian. The wave function $\psi(\mathbf{r}, t)$ contains all the information about the system, and the Hamiltonian operator governs the dynamics of the system.
 
-**时间独立的薛定谔方程**：
+- $\psi(\mathbf{r}, t)$ is the wave function, which encodes the quantum state of a particle or system.
+- $\hbar$ is the reduced Planck's constant
+- $\hat{H}$ is the Hamiltonian operator, which represents the total energy (kinetic + potential) of the system.
+
+#### Time-independent Schrödinger equation
+
 $$
 \hat{H} \psi(\mathbf{r}) = E \psi(\mathbf{r})
 $$
-Schrödinger equation其中，$E$是能量本征值。
 $$
 \nabla^{2} \psi-\frac{8 \pi^{2}}{h^{2}} V \psi \mp \frac{4 \pi i}{h} \frac{\partial \psi}{\partial t}=0
 $$
 
-定态薛定谔方程
 $$
 \nabla^2 \psi + \frac{8 \pi^2}{h^2} (E-V) \psi = 0
 $$
 
-**玻恩规则**
-$$
-\mathbb P = |\psi(x)|^2\\
-\int|\psi(x)|^2 d^3 r= 1
-$$
-
-
-算符对易关系
-$$
-[\hat x, \hat y] = x y - yx = i \hbar
-$$
-**测量中的期望值**
-$$
-\langle\hat{A}\rangle=\int \psi^{*}(\mathbf{r}, t) \hat{A} \psi(\mathbf{r}, t) d^{3} r
-$$
-## Uncertainty Principle
+### Uncertainty Principle
 
 描述了两个共轭可观测量（如位置和动量，或能量和时间）之间的不确定性关系。一般形式的海森堡不确定性原理可以表示为：
 $$
@@ -55,6 +56,25 @@ $$
 $$
 \Delta x \Delta p \geq \frac{\hbar}{2}
 $$
+
+
+
+**玻恩规则**
+$$
+\mathbb P = |\psi(x)|^2\\
+\int|\psi(x)|^2 d^3 r= 1
+$$
+
+
+算符对易关系
+$$
+[\hat x, \hat y] = x y - yx = i \hbar
+$$
+**测量中的期望值**
+$$
+\langle\hat{A}\rangle=\int \psi^{*}(\mathbf{r}, t) \hat{A} \psi(\mathbf{r}, t) d^{3} r
+$$
+
 
 ### 狄拉克方程
 
@@ -89,30 +109,3 @@ I & 0 \\
 \end{pmatrix}
 $$
 其中 $I$ 是 2×2 单位矩阵，$\sigma^i$ 是泡利矩阵。
-
-## 自旋
-
-
-## Fermi-Dirac Distribution（用于描述费米子）：
-
-$$
-f(E) = \frac{1}{e^{(E - \mu) / k_B T} + 1}
-$$
-其中，$E$是能量，$\mu$是化学势，$k_B$是玻尔兹曼常数，$T$是温度。
-
-## Bose-Einstein Distribution（用于描述玻色子）：
-
-$$
-n(\epsilon) = \frac{1}{e^{(\epsilon - \mu) / k_B T} - 1}
-$$
-其中，$\epsilon$是单粒子能量，$\mu$是化学势。
-
-
-
-**路径积分表述（Path Integral Formulation）**（费曼路径积分）：
-$$
-\langle x_f, t_f | x_i, t_i \rangle = \int \mathcal{D}[x(t)] e^{\frac{i}{\hbar} S[x(t)]}
-$$
-其中，$S[x(t)]$是作用量。
-
-## Yang-Mills theory

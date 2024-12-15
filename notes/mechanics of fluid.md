@@ -2,16 +2,17 @@
 
 [TOC]
 
-### Navier Stokes Equations  
+### Navier Stokes Equations
 $$
 ρ \left(\frac{∂\boldsymbol v}{∂t} + (\boldsymbol v · ∇) \boldsymbol v \right) =  - ∇ P  + ρ \boldsymbol f + η ∇^2 \boldsymbol v + \left(ζ + \frac{η}{3} \right) ∇ (∇ · \boldsymbol v)
 $$
 
-For dimension $d$, the component formula is 
+(**component formula of Navier Stokes Equations**)
 $$
 ρ \left(\frac{∂ v_x}{∂t} + \sum_{i=1}^{\dim} v_i \frac{∂ v_d}{∂x_i}\right) =  - \frac{∂ P}{∂d}  + ρ  f_d + η \sum_{i=1}^{\dim} \left(\frac{∂^2 v_d}{∂ x_i^2}\right) + \left(ζ + \frac{η}{3} \right) \frac{∂\left(\sum\limits_{i=1}^{\dim} \frac{∂ v_d}{∂x_i}\right)}{∂x_i}
 $$
 
+#### Incompressible fluid
 For incompressible fluid, we have $∇ ·\boldsymbol v ≡ 0$ and
 $$
 \frac{∂\boldsymbol v}{∂t} + (\boldsymbol v·∇) \boldsymbol v = -\frac{1}{ρ} ∇ P  + \boldsymbol f + \frac{η}{ρ} ∇^2 \boldsymbol v  \tag{$∇ ·\boldsymbol v ≡ 0$}
@@ -20,9 +21,17 @@ $$
 - $ρ$: Density
 - Pressure: $∇ ·∇ P = ∇ ·v·ρ/ dt$
 
+#### Ideal fluid: Eular equation
 
-### Bernoulli equation
-Steady fluid, 流体所在区域任意一点的速度都不随时间变化的流体.  
+$$
+\begin{align*}
+  \frac{∂ \boldsymbol v}{∂ t} + (\boldsymbol v · ∇)\boldsymbol v &= - \frac{1}{ρ} ∇ p  \\
+  \frac{∂ \boldsymbol v}{∂ t} + (\boldsymbol v · ∇)\boldsymbol v &= - \frac{1}{ρ}·∇ p + \boldsymbol g  \tag{重力场$\boldsymbol g$下}
+\end{align*}
+$$
+
+#### Steady fluid: Bernoulli equation
+流体所在区域任意一点的速度都不随时间变化的流体.  
 $$
 \begin{align*}
 \frac{v^2}{2} + w &= const.  \\
@@ -61,14 +70,7 @@ $$
 \end{align*}
 $$
 
-Eular Ideal fluid equation
 
-$$
-\begin{align*}
-  \frac{∂ \boldsymbol v}{∂ t} + (\boldsymbol v · ∇)\boldsymbol v &= - \frac{1}{ρ} ∇ p  \\
-  \frac{∂ \boldsymbol v}{∂ t} + (\boldsymbol v · ∇)\boldsymbol v &= - \frac{1}{ρ}·∇ p + \boldsymbol g  \tag{重力场$\boldsymbol g$下}
-\end{align*}
-$$
 
 $- ∇ p$: 单位体积流体上的作用力.
 
