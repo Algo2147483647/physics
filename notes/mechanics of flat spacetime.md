@@ -2,7 +2,9 @@
 
 [TOC]
 
-## Principles & Concepts
+## Flat relativity spacetime
+
+### Relativity principle
 
 **The relativity principle**: All natural laws are the same in all inertial reference frames.
 
@@ -11,18 +13,18 @@ $$
 c = 2.998 × 10^8 m/s
 $$
 
-### Minkowski Space
+### Minkowski Space-time
 
+<img src="./assets/World_line.svg" alt="World_line" style="zoom: 50%;" />
 $$
 (t, x, y, z)
 $$
 
 Minkowski spacetime is a four-dimensional manifold that combines three-dimensional Euclidean space and time. 
 
-### Event
-**Event**: 一个事件由其发生的位置和时间所描述$(t, x, y, z)$.
+#### Space-Time Interval: Minkowski Metric
 
-**Event interval**:
+the space-time interval between two events in Minkowski space is given by the equation:
 $$
 \begin{align*}
   s_{12} &= (c^2 (t_2-t_1)^2 - (x_2-x_1)^2 - (y_2-y_1)^2 - (z_2-z_1)^2)^{\frac{1}{2}}  \\
@@ -30,15 +32,6 @@ $$
 \end{align*}
 $$
 
-## Least Action
-
-### Action
-
-$$
-S = \int L \, d\tau\\
-L = -mc^2 \sqrt{1 - \frac{v^2}{c^2}}\\
-d\tau = \sqrt{1 - \frac{v^2}{c^2}}
-$$
 
 ### Lorentz Transformation
 
@@ -60,6 +53,16 @@ v_y &= \frac{v'_y \sqrt{1 - \frac{V^2}{c^2}}}{1 + \frac{v'_x V}{c^2}}\\
 v_z &= \frac{v'_z \sqrt{1 - \frac{V^2}{c^2}}}{1 + \frac{v'_x V}{c^2}}
 \end{align*}
 $$
+
+## Least Action
+
+### Action
+
+$$
+S = \int L \, d\tau\\
+d\tau = \sqrt{1 - \frac{v^2}{c^2}}\mathrm{d}t
+$$
+
 
 ## Appendix
 
