@@ -14,6 +14,25 @@ Quantum objects (like electrons or photons) exhibit both wave-like and particle-
 
 The Copenhagen Interpretation asserts that until a quantum system is measured, it exists in a superposition of all possible states. Upon measurement, the wave function "collapses" to a single state, which is observed. The act of observation is crucial in determining the outcome.
 
+## Wave Function
+
+
+玻恩规则
+$$
+\mathbb P = |\psi(x)|^2\\
+\int|\psi(x)|^2 d^3 r= 1
+$$
+
+
+算符对易关系
+$$
+[\hat x, \hat y] = x y - yx = i \hbar
+$$
+测量中的期望值
+$$
+\langle\hat{A}\rangle=\int \psi^{*}(\mathbf{r}, t) \hat{A} \psi(\mathbf{r}, t) d^{3} r
+$$
+
 ### Wave equation: Schrödinger equation
 
 $$
@@ -45,9 +64,7 @@ $$
 \Delta A \Delta B \geq \frac{1}{2} \left| \langle [\hat{A}, \hat{B}] \rangle \right|
 $$
 
-其中：
-
-- $\Delta A$ 是可观测量 $A$ 的标准偏差（不确定性）。
+- $\Delta A$: The standard deviation (or uncertainty) of the observable $A$. 
 - $\hat{A}$ 和 $\hat{B}$ 是对应的量子算符。
 - $\langle [\hat{A}, \hat{B}] \rangle$ 是对易算符的期望值。
 
@@ -57,26 +74,7 @@ $$
 \Delta x \Delta p \geq \frac{\hbar}{2}
 $$
 
-
-
-**玻恩规则**
-$$
-\mathbb P = |\psi(x)|^2\\
-\int|\psi(x)|^2 d^3 r= 1
-$$
-
-
-算符对易关系
-$$
-[\hat x, \hat y] = x y - yx = i \hbar
-$$
-**测量中的期望值**
-$$
-\langle\hat{A}\rangle=\int \psi^{*}(\mathbf{r}, t) \hat{A} \psi(\mathbf{r}, t) d^{3} r
-$$
-
-
-### 狄拉克方程
+### Dirac equation
 
 狄拉克方程是一个关于四分量自旋量子的方程，可以写作：
 

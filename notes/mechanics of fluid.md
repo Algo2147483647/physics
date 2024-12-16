@@ -2,7 +2,10 @@
 
 [TOC]
 
-### Navier Stokes Equations
+## Action
+
+### Equation of motion: Navier Stokes Equations
+
 $$
 ρ \left(\frac{∂\boldsymbol v}{∂t} + (\boldsymbol v · ∇) \boldsymbol v \right) =  - ∇ P  + ρ \boldsymbol f + η ∇^2 \boldsymbol v + \left(ζ + \frac{η}{3} \right) ∇ (∇ · \boldsymbol v)
 $$
@@ -23,6 +26,7 @@ $$
 
 #### Ideal fluid: Eular equation
 
+Ideal fluid 不可压缩且没有粘度, 所以不存在切向力
 $$
 \begin{align*}
   \frac{∂ \boldsymbol v}{∂ t} + (\boldsymbol v · ∇)\boldsymbol v &= - \frac{1}{ρ} ∇ p  \\
