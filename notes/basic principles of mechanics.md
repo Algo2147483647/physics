@@ -10,7 +10,7 @@ $$
 S = \int L \mathrm{d} t
 $$
 
-The action is defined as the integral of the Lagrangian $L$ over time. It provides a unifying principle that describes the dynamics of a system in terms of its energy distribution.
+The action is defined as the integral of the Lagrangian $L$ over time, for a physics system with generalized coordinates, generalized velocity and time $(q,\dot q,t)$. It provides a unifying principle that describes the dynamics of a system in terms of its energy distribution.
 
 The Lagrangian $L$ is a function that encapsulates the state and dynamics of a system.
 
@@ -24,10 +24,10 @@ $$
 
 Nature chooses the path between two points in configuration spacetime that makes $S$ stationary.
 
-### Euler-Lagrange equations
+### Equations of motion: Euler-Lagrange equations
 
 $$
-\frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}} \right) - \frac{\partial \mathcal{L}}{\partial q} = 0,
+\frac{\mathrm d}{\mathrm dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}} \right) - \frac{\partial \mathcal{L}}{\partial q} = 0,
 $$
 
 where $q$ represents generalized coordinates of the system, and $\dot{q}$ is the time derivative (velocity).
@@ -83,3 +83,17 @@ For every differentiable symmetry of the action of a physical system, there exis
 - Time translation symmetry → Conservation of energy: If the Lagrangian does not explicitly depend on time $\partial \mathcal{L} / \partial t = 0$, energy is conserved.
 - Spatial translation symmetry → Conservation of linear momentum: If the Lagrangian is invariant under shifts in position, linear momentum is conserved.
 - Rotational symmetry → Conservation of angular momentum: If the Lagrangian is invariant under rotations, angular momentum is conserved.
+
+## Appendix
+
+### Proof of Euler-Lagrange equations
+
+$$
+\begin{align*}
+  δ S &= 0\\
+  δ \int_{t_1}^{t_2} L(q,\dot q,t)\mathrm d t &= 0\\
+  \int_{t_1}^{t_2} \left(\frac{∂ L}{∂ q}δ q + \frac{∂ L}{∂ \dot q}δ \dot q \right) \mathrm d t &= 0\\
+  \frac{∂ L}{∂ \dot q} δ q |_{t_1}^{t_2} + \int_{t_1}^{t_2} \left(\frac{∂ L}{∂ q} - \frac{d}{dt} \frac{∂ L}{∂ \dot q}\right) δ q \mathrm d t  &= 0\\
+  \frac{\mathrm d}{\mathrm d t} \frac{\partial L}{\partial \dot q} - \frac{\partial L}{\partial q} &= 0
+  \end{align*}
+$$

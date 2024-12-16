@@ -107,3 +107,30 @@ I & 0 \\
 \end{pmatrix}
 $$
 其中 $I$ 是 2×2 单位矩阵，$\sigma^i$ 是泡利矩阵。
+
+
+## Spin
+
+
+### Fermions: Fermi-Dirac Distribution
+
+$$
+f(E) = \frac{1}{e^{(E - \mu) / k_B T} + 1}
+$$
+其中，$E$是能量，$\mu$是化学势，$k_B$是玻尔兹曼常数，$T$是温度。
+
+### Boson: Bose-Einstein Distribution
+
+$$
+n(\epsilon) = \frac{1}{e^{(\epsilon - \mu) / k_B T} - 1}
+$$
+其中，$\epsilon$是单粒子能量，$\mu$是化学势。
+
+
+**路径积分表述（Path Integral Formulation）**（费曼路径积分）：
+$$
+\langle x_f, t_f | x_i, t_i \rangle = \int \mathcal{D}[x(t)] e^{\frac{i}{\hbar} S[x(t)]}
+$$
+其中，$S[x(t)]$是作用量。
+
+### Yang-Mills theory
