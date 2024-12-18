@@ -108,6 +108,41 @@ I & 0 \\
 $$
 其中 $I$ 是 2×2 单位矩阵，$\sigma^i$ 是泡利矩阵。
 
+## Hydrogen Atom
+
+### Hamiltonian of the hydrogen atom
+
+$$
+H = -\frac{\hbar^2}{2m} \nabla^2 - \frac{e^2}{4 \pi \epsilon_0 r}
+$$
+
+- $-\frac{\hbar^2}{2m} \nabla^2$: **Kinetic Energy**. This term accounts for the kinetic energy of the particle due to its motion through space.
+- $-\frac{e^2}{4 \pi \epsilon_0 r}$: **Potential Energy**. This term represents the Coulomb potential energy between two charged particles, such as the attraction between the negatively charged electron and the positively charged proton in a hydrogen atom. The negative sign indicates that this is an attractive force.
+
+### Wave function solution for the hydrogen atom
+
+$$
+\begin{align*}
+\psi_{n,l,m_l}(r, \theta, \phi) &= R_{n,l}(r) \cdot \Theta(\theta) \cdot \Phi(\phi)  \\
+R_{n,l}(r) &= \sqrt{\frac{2}{a_0}} \cdot \frac{1}{\sqrt{n^2}} \left( \frac{r}{a_0} \right)^l e^{-\frac{r}{n a_0}} L_{n-l-1}^{2l+1} \left( \frac{2r}{n a_0} \right)  \tag{Radial}\\
+\Theta(\theta) &= P_l^{m_l}(\cos \theta)  \tag{Angular}  \\
+\Phi(\phi) &= \frac{1}{\sqrt{2\pi}} e^{i m_l \phi}  \tag{Azimuthal angle}
+\end{align*}
+$$
+
+- $n$: principal quantum number (for energy levels). $n = 1, 2, 3, \dots$.
+- $l$: angular momentum quantum number (determines the orbital shape).
+- $m_l$: magnetic quantum number (determines the orientation of the orbital in space).
+- $\psi_{n,l,m_l}(r, \theta, \phi)$: the wavefunction of the system, which depends on three quantum numbers.
+- $R_{n,l}(r)$: the radial part of the wavefunction, which describes how the wavefunction depends on the radial distance $r$ from the nucleus.
+- $\Theta(\theta)$: the angular part of the wavefunction. $P_l^{m_l}(\cos \theta)$ is the associated Legendre polynomial.
+- $\Phi(\phi)$: the angular dependence on the azimuthal angle $\phi$, which is periodic with period $2\pi$. The factor $e^{i m_l \phi}$ reflects the azimuthal dependence of the wavefunction. The quantum number $m_l$ determines how the wavefunction rotates in the $xy$-plane. The factor $\frac{1}{\sqrt{2\pi}}$ is a normalization factor to ensure that the wavefunction is properly normalized over the angular coordinate $\phi$, such that $\int_0^{2\pi} e^{i m_l \phi} e^{-i m_l' \phi} d\phi = 2\pi \delta_{m_l,m_l'}$.
+
+$$
+E_n = - \frac{13.6 \, \text{eV}}{n^2}
+$$
+
+
 
 ## Spin
 
