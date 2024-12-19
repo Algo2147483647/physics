@@ -10,12 +10,14 @@
 - Spacetime
   - Absolute spacetime
 
+    $S = \int \left(\frac{m v^2}{2} - U(\boldsymbol r, t)\right) \mathrm dt  \tag{particle}$
+
   - Flat spacetime
 
   - Curved spacetime
 
     $S=-\frac{1}{c}\int L_m \sqrt{-g} \mathrm d^4x + \frac{c^3}{16\pi G}\int R\sqrt{-g} \mathrm d^4x$
-
+  
 - Field
   - Electromagnetic field
 
