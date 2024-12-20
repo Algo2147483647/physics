@@ -40,7 +40,7 @@ $$
 
 As the temperature of a system approaches absolute zero, all processes cease and the entropy of the system approaches a minimum value.
 
-## Ensemble
+## Collection of microscopic systems: Ensemble
 
 An ensemble in statistical mechanics is a large collection of virtual copies of a system, considered in different possible states. Each member of the ensemble represents a possible configuration (or microstate) of the system under certain conditions. The introduction of the ensemble is to describe the macroscopic thermodynamic behavior from a microscopic perspective, providing a bridge connecting the macroscopic and microscopic aspects through statistical methods.
 
