@@ -4,6 +4,22 @@
 
 ## Action
 
+### Action of fluid
+
+$$
+S = \int \left( \frac{1}{2} \rho \mathbf{v}^2 - p + \mu \left( \nabla \mathbf{v} + (\nabla \mathbf{v})^T \right) : \left( \nabla \mathbf{v} + (\nabla \mathbf{v})^T \right) \right) d^3x \, dt
+$$
+
+- $\rho$: the density of the fluid.
+- $\mathbf{v}$: the velocity field.
+- $p$: the pressure.
+- $\mu$: the dynamic viscosity of the fluid.
+- $\nabla \mathbf{v}$: the gradient of the velocity field.
+- $\ :\ $: the double contraction of two tensors (in this case, the gradients of the velocity).
+- $\frac{1}{2} \rho \mathbf{v}^2$ Kinetic energy density: Describes the motion of the fluid particles.
+- $-p$ Pressure (or potential) energy density: Describes the internal energy of the fluid related to its compressibility.
+- $\mu \left( \nabla \mathbf{v} + (\nabla \mathbf{v})^T \right) : \left( \nabla \mathbf{v} + (\nabla \mathbf{v})^T \right)$ Viscous dissipation: Describes the internal friction and the energy loss due to viscosity.
+
 ### Equation of motion: Navier Stokes Equations
 
 $$
@@ -26,46 +42,31 @@ $$
 
 #### Ideal fluid: Eular equation
 
-Ideal fluid 不可压缩且没有粘度, 所以不存在切向力
+Ideal fluid is incompressible and has no viscosity, so there is no tangential force
 $$
 \begin{align*}
-  \frac{∂ \boldsymbol v}{∂ t} + (\boldsymbol v · ∇)\boldsymbol v &= - \frac{1}{ρ} ∇ p  \\
-  \frac{∂ \boldsymbol v}{∂ t} + (\boldsymbol v · ∇)\boldsymbol v &= - \frac{1}{ρ}·∇ p + \boldsymbol g  \tag{重力场$\boldsymbol g$下}
+  \frac{∂ \boldsymbol v}{∂ t} + (\boldsymbol v · ∇)\boldsymbol v &= - \frac{1}{ρ} ∇ P + \boldsymbol f\tag{$∇^2 \boldsymbol v ≡ 0$}
 \end{align*}
 $$
 
 #### Steady fluid: Bernoulli equation
-流体所在区域任意一点的速度都不随时间变化的流体.  
+Steady fluid is a fluid in which the velocity of any point in the fluid region does not change with time.
 $$
 \begin{align*}
 \frac{v^2}{2} + w &= const.  \\
-\frac{v^2}{2} + w + g z &= const.  \tag{重力场中}
+\frac{v^2}{2} + w + g z &= const.  \tag{In gravity field}
 \end{align*}
 $$
 
-### Ideal Fluid
-Mass Conservation
-
-$$
-\begin{align*}
-  \oint ρ \boldsymbol v · d \boldsymbol f &= -\frac{∂}{∂ t}\int ρ dV   \\
-  \Rightarrow\quad  \int ∇ · (ρ \boldsymbol v) dV  &= -\frac{∂}{∂ t}\int ρ dV  \\
-  \Rightarrow\quad  \int \left(∇ · (ρ \boldsymbol v) + \frac{∂ ρ}{∂ t} \right) dV  &= 0  
-\end{align*}
-$$
-
-区域体流出质量 = 区域封闭面流出质量.
-
-Continuity equation
+### Ideal Fluid, Continuity equation
 
 $$
 ∇ · (ρ \boldsymbol v) + \frac{∂ ρ}{∂ t} = 0
 $$
 质量流流出速率 = 流体密度减少速率.
-
 - 质量流密度 $\boldsymbol j = ρ \boldsymbol v$
 
-Equation of motion
+### Equation of motion
 
 $$
 \begin{align*}
@@ -88,5 +89,15 @@ $$
 \mathrm d \boldsymbol v &= \frac{∂ \boldsymbol v}{∂t} \mathrm d t + (\mathrm d \boldsymbol r · ∇) \boldsymbol v    \tag{全导数}  \\
 \Rightarrow\quad \frac{\mathrm d \boldsymbol v}{\mathrm d t} &= \frac{∂ \boldsymbol v}{∂t} + (\boldsymbol v · ∇) \boldsymbol v  \tag{除以$\mathrm d t$}  \\
 \Rightarrow\quad \frac{∂ \boldsymbol v}{∂t} + (\boldsymbol v · ∇) \boldsymbol v &= - \frac{1}{ρ} ∇ p + \boldsymbol g  \tag{代入}
+\end{align*}
+$$
+
+### Proof of Continuity equation
+Mass Conservation. The outflow mass of the region body = the outflow mass of the region closed surface.
+$$
+\begin{align*}
+  \oint ρ \boldsymbol v · d \boldsymbol f &= -\frac{∂}{∂ t}\int ρ dV   \\
+  \Rightarrow\quad  \int ∇ · (ρ \boldsymbol v) dV  &= -\frac{∂}{∂ t}\int ρ dV  \\
+  \Rightarrow\quad  \int \left(∇ · (ρ \boldsymbol v) + \frac{∂ ρ}{∂ t} \right) dV  &= 0  
 \end{align*}
 $$

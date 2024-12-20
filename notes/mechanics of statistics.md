@@ -29,16 +29,24 @@ $$
 \mathrm{d}U = \mathrm{d}Q - \mathrm{d}W
 $$
 
-### First law
-
 In a process without transfer of matter, the change in internal energy, $\Delta U$, of a thermodynamic system is equal to the energy gained as heat, $Q$, less the thermodynamic work, $W$, done by the system on its surroundings.
 $$
 \Delta U = Q-W
 $$
 
-### Third law
-
 As the temperature of a system approaches absolute zero, all processes cease and the entropy of the system approaches a minimum value.
+
+### Maxwell-Boltzmann Distribution
+
+$$
+f(v) = \left( \frac{m}{2\pi k_B T} \right)^{3/2} 4\pi v^2 \exp\left(-\frac{mv^2}{2k_B T}\right)
+$$
+
+### Boltzmann Distribution
+
+$$
+N_i \propto \exp\left(-\frac{E_i}{k_B T}\right)
+$$
 
 ## Collection of microscopic systems: Ensemble
 
@@ -132,6 +140,11 @@ C_V &= \frac{\partial \langle E \rangle}{\partial T}\\
 \end{align*}
 $$
 
+#### Gibbs Distribution
+
+$$
+P(E_i) = \frac{e^{-\frac{E_i}{k_B T}}}{Z}
+$$
 
 ### Grand canonical ensemble
 

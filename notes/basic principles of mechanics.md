@@ -73,6 +73,9 @@ $$
 \int \mathrm{d} \Gamma = const.
 $$
 
+## Field
+
+Field refers to a physical quantity that has a value at every point in space and time. Fields can be scalar, vector, or more complex mathematical objects, and they are typically used to describe how physical quantities (like force, energy, or potential) vary over space and time.
 
 ## Symmetry: Noether's theorem
 
