@@ -110,6 +110,16 @@ $$
 
 d'Alembert's equation describes the propagation of electromagnetic waves. 
 
+#### Speed of electromagnetic waves in vacuum: Speed of Light
+
+$$
+\begin{align*}
+c &= \frac{1}{\sqrt{\mu_0 \epsilon_0}} \\
+&\approx \frac{1}{\sqrt{(4\pi \times 10^{-7} \, \text{N/A}^2)(8.854 \times 10^{-12} \, \text{F/m})}} \\
+&\approx 2.99792458 \times 10^8 \, \text{m/s}
+\end{align*}
+$$
+
 
 
 
